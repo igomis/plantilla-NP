@@ -1,11 +1,14 @@
 <?php
 
+namespace _older\acceptance;
+
+use AcceptanceTester;
+
 class BuclesCest
 {
     public function _before(AcceptanceTester $I)
     {
     }
-
 
     public function try220WorksTest(AcceptanceTester $I)
     {

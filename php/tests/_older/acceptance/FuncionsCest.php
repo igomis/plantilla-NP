@@ -1,11 +1,14 @@
 <?php
 
+namespace _older\acceptance;
+
+use AcceptanceTester;
+
 class FuncionsCest
 {
     public function _before(AcceptanceTester $I)
     {
     }
-
 
     public function try243WorksTest(AcceptanceTester $I)
     {
@@ -13,7 +16,7 @@ class FuncionsCest
         $I->fillField('euros', '10');
         $I->click('submit');
         $I->seeInCurrentUrl('/243.php');
-        $I->seeInField('pesetes',"1660");
+        $I->seeInField('pesetes', "1660");
     }
 
     public function try244WorksTest(AcceptanceTester $I)
@@ -40,7 +43,6 @@ class FuncionsCest
         $I->click('submit');
         $I->seeInCurrentUrl('/244b.php');
         $I->see('249');
-
     }
 
     public function try245WorksTest(AcceptanceTester $I)
@@ -73,7 +75,6 @@ class FuncionsCest
         $I->see('249');
         $I->see('Supermercat Sever');
         $I->see('El teu supermercat de confiança');
-
     }
 
     public function try246WorksTest(AcceptanceTester $I)
@@ -108,7 +109,4 @@ class FuncionsCest
         $I->see('Hi ha 1 i');
         $I->see('Hi ha 5 vocals');
     }
-
-
-
 }

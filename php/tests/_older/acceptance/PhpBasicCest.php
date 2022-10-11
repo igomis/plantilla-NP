@@ -1,5 +1,9 @@
 <?php
 
+namespace _older\acceptance;
+
+use AcceptanceTester;
+
 class PhpBasicCest
 {
     public function _before(AcceptanceTester $I)
@@ -19,7 +23,6 @@ class PhpBasicCest
         $I->see('Suma: 166 + 199 = 365');
         $I->see('Resta: 166 - 199 = -33');
         $I->see('Multiplicació: 166 x 199 = 33034');
-
     }
 
     public function try203WorksTest(AcceptanceTester $I)
@@ -139,8 +142,4 @@ class PhpBasicCest
         $I->amOnPage('/212.php?a=1&b=2&c=1');
         $I->see('La solució es: -1');
     }
-
-
-
-
 }

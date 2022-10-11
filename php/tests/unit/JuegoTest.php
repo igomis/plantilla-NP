@@ -1,6 +1,6 @@
 <?php
 
-class DvdTest extends \Codeception\Test\Unit
+class JuegoTest extends \Codeception\Test\Unit
 {
     /**
      * @var \UnitTester

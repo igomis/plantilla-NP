@@ -14,10 +14,6 @@ class DvdTest extends \Codeception\Test\Unit
 
     }
 
-    protected function _after()
-    {
-    }
-
     // tests
     public function testPreuAmbIva()
     {
